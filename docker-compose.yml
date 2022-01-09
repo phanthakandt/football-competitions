@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  nginx:
+    build:
+      dockerfile: Dockerfile
+      context: ./nginx
+    depends_on:
+      - frontend
+    ports:
+      - 80:80
+    networks:
+      - network_services
+
+  frontend:
+    build:
+      dockerfile: Dockerfile
+      context: ./frontend
+    volumes:
+      - /app/node_modules
+      - ./frontend:/src
+    networks:
+      - network_services
+
+networks:
+  network_services:
+    driver: bridge
