@@ -3,6 +3,6 @@ WORKDIR /src
 COPY ./ ./
 COPY package.json ./
 COPY package-lock.json ./
-RUN npm install
+RUN npm update
 EXPOSE 3000
 CMD ["npm","run","start"]
