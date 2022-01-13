@@ -1,0 +1,27 @@
+.finished {
+    background-color: #3e8ed0;
+    color: #fff;
+}
+
+.postponed {
+    background-color: #f14668;
+    color: #fff;
+}
+
+.scheduled {
+    background-color: gold;
+    color: #fff;
+}
+
+.tag {
+    border-radius: 5px;
+    width: 80px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.data-table-extensions {
+    display: none;
+}

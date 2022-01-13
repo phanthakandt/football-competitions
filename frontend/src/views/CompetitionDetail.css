@@ -1,0 +1,22 @@
+/* body.page {
+    background: rgb(75, 75, 75);
+} */
+
+.page-wrapper {
+    padding: 3rem!important;
+
+}
+
+.row {
+    max-width: 100%;
+}
+
+.flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    padding: 3rem!important;
+}
