@@ -13,15 +13,11 @@ export default function CompetitionDetail() {
 
     let { id } = useParams()
     const [competition, setCompentition] = useState({})
-    const [data, setMatches] = useState([
-    ])
+    const [data, setMatches] = useState([])
 
     useEffect(async () => {
         try {
             let res = await get_competition_matches(id)
-            // console.log(res.data);
-            // console.log(res.data.matches);
-            // console.log(columns);
             setCompentition(res.data)
             setMatches(res.data.matches)
 
@@ -35,7 +31,7 @@ export default function CompetitionDetail() {
 
     return (
         <body className='page'>
-            <Header text={competition.competition ? competition.competition.name : 'Football Competitions'} />
+            <Header textArr={competition.competition ? [competition.competition.name] : ['Football Competitions']} />
             <div className="wrapper">
                 <h3>
                     Matches

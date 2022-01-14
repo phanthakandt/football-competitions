@@ -23,6 +23,9 @@ export const columns = [
         name: 'Score',
         selector: row => row['status'] === 'FINISHED' ?
             row['score']['fullTime']['homeTeam'] + ' : ' + row['score']['fullTime']['awayTeam'] : '- : -'
+    },
+    {
+        name: '',
+        selector: row => <a href={"/match-detail/" + row['id']}>view</a>
     }
-
 ]

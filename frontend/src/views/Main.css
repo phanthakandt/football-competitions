@@ -1,6 +1,3 @@
-/* body.page {
-    background: linear-gradient(180deg, #0F2027 0%, #203A43 48%, #2C5364 100%);
-} */
 
 .page-wrapper {
     padding-top: 3rem!important;
@@ -8,7 +5,6 @@
 }
 
 .row {
-    max-width: 100%;
     padding-left: 3rem!important;
     padding-right: 3rem!important;
 }

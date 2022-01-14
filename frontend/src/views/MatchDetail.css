@@ -1,0 +1,68 @@
+.wrapper {
+    padding: 5rem !important;
+}
+
+.team-performance-card {
+    border-radius: 10px;
+    padding: 2rem !important;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem !important;
+}
+
+.tag-home {
+    border-radius: 5px;
+    width: 80px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(65, 126, 9);
+    color: #fff;
+}
+
+.tag-away {
+    border-radius: 5px;
+    width: 80px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(157, 235, 255);
+    color: #fff;
+}
+
+h3 {
+    text-align: center;
+}
+
+hr {
+    border: 0;
+    clear: both;
+    display: block;
+    width: 96%;
+    background-color: #3d3d3d;
+    height: 1px;
+}
+
+@media (max-width: 414px) {
+    .wrapper {
+        padding: 0px !important;
+        padding-top: 3rem !important;
+    }
+}
+
+@media (max-width: 360px) {
+    .row {
+        padding-left: 0rem !important;
+        padding-right: 0rem !important;
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

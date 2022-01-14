@@ -21,7 +21,7 @@ const Main = () => {
 
     return (
         <body className='page'>
-            <Header text='Football Competitions' />
+            <Header textArr={['Football Competitions']} />
             <div className='page-wrapper'>
                 <div className="row mt-3 mx-3">
                     {data.competitions && data.competitions.map((item) => (
