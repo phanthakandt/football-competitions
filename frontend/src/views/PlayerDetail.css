@@ -1,0 +1,14 @@
+.player-detail-page {
+    min-height: 100vh;
+}
+
+.player-detail-card {
+    max-width: 750px;
+    min-width: 500px;
+}
+
+@media (max-width: 414px) {
+    .player-detail-card {
+        min-width: 0px;
+    }
+}

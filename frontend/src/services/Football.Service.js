@@ -19,3 +19,8 @@ export async function get_team_detail(id) {
     return await axios.get('https://api.football-data.org/v2/teams/' + id,
         { headers: { 'X-Auth-Token': process.env.REACT_APP_API_TOKEN } })
 }
+
+export async function get_player_detail(id) {
+    return await axios.get('https://api.football-data.org/v2/players/' + id,
+        { headers: { 'X-Auth-Token': process.env.REACT_APP_API_TOKEN } })
+}

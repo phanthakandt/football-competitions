@@ -5,7 +5,7 @@ export const columns = [
     },
     {
         name: 'Name',
-        selector: row => row['name']
+        selector: row => <a href={`/player/${row['id']}`}>{row['name']}</a>
     },
     {
         name: 'Position',
