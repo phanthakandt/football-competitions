@@ -24,7 +24,9 @@ export default function TeamDetail() {
     return (
         <div>
             <Header textArr={team.name ? [`${team.name} (${team.tla})`, `(${team.area.name})`] : ['Football Competitions']} />
-            <TeamCard team={team} />
+            <div className="container">
+                <TeamCard team={team} />
+            </div>
             <Footer />
         </div>
     )
