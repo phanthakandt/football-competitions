@@ -9,6 +9,6 @@
 
 @media (max-width: 414px) {
     .player-detail-card {
-        min-width: 0px;
+        min-width: 350px;
     }
 }
